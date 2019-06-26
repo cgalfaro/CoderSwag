@@ -1,4 +1,4 @@
-package com.example.coderswag.Adapters
+package com.example.coderswag.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,13 +7,10 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.coderswag.Model.Category
+import com.example.coderswag.model.Category
 import com.example.coderswag.R
 
-class CategoryAdapter(context: Context, categories: List<Category>) : BaseAdapter() {
-
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val categoryView : View
